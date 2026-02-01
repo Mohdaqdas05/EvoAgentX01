@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { menuAPI, settingsAPI } from '../api';
 import SectionTitle from './SectionTitle';
-import { Star, Flame } from 'lucide-react';
+import { Star, Flame, Clock, Flame as CalorieIcon } from 'lucide-react';
 import { MENU_CATEGORIES } from '../constants';
 
 const MenuSection = () => {
@@ -125,7 +125,7 @@ const MenuSection = () => {
                     )}
                     {item.calories && (
                       <div className="flex items-center gap-1">
-                        <Users size={14} /> {item.calories} cal
+                        <CalorieIcon size={14} /> {item.calories} cal
                       </div>
                     )}
                   </div>
