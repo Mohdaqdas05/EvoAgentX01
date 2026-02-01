@@ -1,0 +1,19 @@
+{
+  "name": "kgn-restaurant-backend",
+  "version": "1.0.0",
+  "description": "KGN Chinese Corner Restaurant Backend API",
+  "main": "backend/server.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "build": {
+    "src": "backend/server.js",
+    "use": "@vercel/node"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/server.js"
+    }
+  ]
+}
