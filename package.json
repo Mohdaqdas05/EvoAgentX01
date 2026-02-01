@@ -1,0 +1,17 @@
+{
+  "name": "kgn-restaurant-website",
+  "version": "1.0.0",
+  "description": "Modern high-converting restaurant website for KGN Chinese Corner",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "devDependencies": {}
+}

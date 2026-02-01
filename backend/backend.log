@@ -1,0 +1,27 @@
+
+> kgn-restaurant-backend@1.0.0 dev
+> nodemon server.js
+
+[33m[nodemon] 3.1.11[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+/workspaces/EvoAgentX01/backend/node_modules/mongoose/lib/schema.js:713
+      throw new TypeError(`Invalid schema configuration: \`${val}\` is not ` +
+      ^
+
+TypeError: Invalid schema configuration: `11:00` is not a valid type at path `open`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.add (/workspaces/EvoAgentX01/backend/node_modules/mongoose/lib/schema.js:713:13)
+    at Schema.add (/workspaces/EvoAgentX01/backend/node_modules/mongoose/lib/schema.js:751:12)
+    at Schema.add (/workspaces/EvoAgentX01/backend/node_modules/mongoose/lib/schema.js:751:12)
+    at new Schema (/workspaces/EvoAgentX01/backend/node_modules/mongoose/lib/schema.js:141:10)
+    at Object.<anonymous> (/workspaces/EvoAgentX01/backend/models/RestaurantSettings.js:3:34)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+
+Node.js v24.11.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m

@@ -1,0 +1,86 @@
+
+> kgn-restaurant-frontend@0.1.0 start
+> react-scripts start
+
+(node:20696) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:20696) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:20696) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Failed to compile.
+
+Module not found: Error: Can't resolve './SectionTitle' in '/workspaces/EvoAgentX01/frontend/src/components'
+WARNING in [eslint] 
+src/admin/ContactManager.js
+  Line 13:6:  React Hook useEffect has a missing dependency: 'fetchContacts'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/admin/OrderManager.js
+  Line 14:6:  React Hook useEffect has a missing dependency: 'fetchOrders'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/admin/ReservationManager.js
+  Line 3:10:  'CheckCircle' is defined but never used                                                                               no-unused-vars
+  Line 3:23:  'XCircle' is defined but never used                                                                                   no-unused-vars
+  Line 3:32:  'Clock' is defined but never used                                                                                     no-unused-vars
+  Line 14:6:  React Hook useEffect has a missing dependency: 'fetchReservations'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/admin/SettingsManager.js
+  Line 5:10:  'settings' is assigned a value but never used  no-unused-vars
+
+src/components/Footer.js
+  Line 16:15:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+  Line 17:15:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+  Line 18:15:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+  Line 19:15:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+  Line 60:13:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+  Line 61:13:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+  Line 62:13:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+
+src/components/MenuSection.js
+  Line 4:10:   'Star' is defined but never used                                                                              no-unused-vars
+  Line 11:10:  'settings' is assigned a value but never used                                                                 no-unused-vars
+  Line 16:6:   React Hook useEffect has a missing dependency: 'fetchMenu'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/HomePage.js
+  Line 6:10:  'Users' is defined but never used       no-unused-vars
+  Line 6:23:  'Award' is defined but never used       no-unused-vars
+  Line 6:60:  'BarChart3' is defined but never used   no-unused-vars
+  Line 6:71:  'TrendingUp' is defined but never used  no-unused-vars
+  Line 6:83:  'Eye' is defined but never used         no-unused-vars
+
+ERROR in ./src/components/MenuSection.js 7:0-42
+Module not found: Error: Can't resolve './SectionTitle' in '/workspaces/EvoAgentX01/frontend/src/components'
+
+ERROR in ./src/components/MenuSection.js 9:0-47
+Module not found: Error: Can't resolve '../constants' in '/workspaces/EvoAgentX01/frontend/src/components'
+
+ERROR in [eslint] 
+src/components/MenuSection.js
+  Line 123:26:  'Clock' is not defined  react/jsx-no-undef
+  Line 128:26:  'Users' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 3 errors and 1 warning
+(node:20696) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+Proxy error: Could not proxy request /favicon.ico from localhost:3000 to http://localhost:5000.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
+Proxy error: Could not proxy request /favicon.ico from localhost:3000 to http://localhost:5000.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
+Proxy error: Could not proxy request /favicon.ico from localhost:3000 to http://localhost:5000.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
+Proxy error: Could not proxy request /favicon.ico from localhost:3000 to http://localhost:5000.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
+Proxy error: Could not proxy request /favicon.ico from localhost:3000 to http://localhost:5000.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
+Proxy error: Could not proxy request /favicon.ico from localhost:3000 to http://localhost:5000.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
+Proxy error: Could not proxy request /favicon.ico from localhost:3000 to http://localhost:5000.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
