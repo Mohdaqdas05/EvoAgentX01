@@ -16,8 +16,31 @@ const app = express();
 // Connect to database
 connectDB();
 
+// CORS Configuration - Allow specific domains
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://localhost:5000',
+  'https://kgn.hs-sites-na2.com',
+  'https://www.kgn.hs-sites-na2.com',
+  'https://api.kgn.hs-sites-na2.com',
+  process.env.FRONTEND_URL
+].filter(Boolean);
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
