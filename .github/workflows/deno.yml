@@ -25,7 +25,17 @@ jobs:
       - name: Setup repo
         uses: actions/checkout@v4
 
+      - name: Check if Deno files exist
+        id: check_deno
+        run: |
+          if find . -name "*.ts" -o -name "deno.json" | grep -qv node_modules; then
+            echo "has_deno=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_deno=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Setup Deno
+        if: steps.check_deno.outputs.has_deno == 'true'
         # uses: denoland/setup-deno@v1
         uses: denoland/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31  # v1.1.2
         with:
@@ -36,7 +46,13 @@ jobs:
       #   run: deno fmt --check
 
       - name: Run linter
+        if: steps.check_deno.outputs.has_deno == 'true'
         run: deno lint
 
       - name: Run tests
+        if: steps.check_deno.outputs.has_deno == 'true'
         run: deno test -A
+
+      - name: Skip Deno (Node.js project)
+        if: steps.check_deno.outputs.has_deno == 'false'
+        run: echo "✓ Deno workflow skipped - this is a Node.js/React project"
