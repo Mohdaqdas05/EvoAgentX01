@@ -174,17 +174,12 @@ EvoAgentX01/
 
 **Admin Account:**
 ```
-Email: admin@kgn.com
-Password: admin123
+Email: Check console output after node initdb.js
+Password: Check console output (change immediately)
 Access: Full admin dashboard
 ```
 
-**Customer Account:**
-```
-Email: customer@example.com
-Password: customer123
-Access: Make reservations, browse menu
-```
+**IMPORTANT**: Change your password and email immediately after first login!
 
 ---
 
@@ -228,9 +223,11 @@ All customizable in admin dashboard!
 4. Create account for orders
 
 ### For Admin
-1. Login with admin@kgn.com / admin123
-2. Click "Admin" button
-3. Manage menu, reservations, orders, settings
+1. Login with credentials provided in console after `node initdb.js`
+2. **Change your password** in Settings immediately
+3. **Update your email** in Settings
+4. Click "Admin" button
+5. Manage menu, reservations, orders, settings
 
 ### For Developers
 1. Backend: `/backend` with Express.js

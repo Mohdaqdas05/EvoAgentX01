@@ -78,8 +78,8 @@ node initdb.js
 ```
 
 This will:
-- ✅ Create admin user (admin@kgn.com / admin123)
-- ✅ Create test customer (customer@example.com / customer123)
+- ✅ Create admin user (check console for initial password)
+- ✅ Create test customer account
 - ✅ Add 8 sample menu items
 - ✅ Create restaurant settings
 - ✅ Add 5 sample testimonials
@@ -88,18 +88,13 @@ This will:
 
 ## 4️⃣ Test Admin Login
 
+After running `node initdb.js`, an admin account is created with a secure password.
+
 1. Go to http://localhost:3000/login
-2. Login with:
-   - **Email**: admin@kgn.com
-   - **Password**: admin123
-3. Click on "Admin" button in navbar
-4. You'll see the admin dashboard with:
-   - Analytics
-   - Menu Manager
-   - Reservation Manager
-   - Order Manager
-   - Contact Manager
-   - Settings
+2. Check the console output for admin email and temporary password
+3. **IMPORTANT**: Change your password immediately after first login in Settings
+4. Update your admin email in Settings
+5. Click on "Admin" button in navbar to access the dashboard
 
 ---
 
@@ -138,7 +133,8 @@ Test card: `4242 4242 4242 4242`
 - [ ] MongoDB configured (Atlas or local)
 - [ ] `.env` file updated with MongoDB URI
 - [ ] Database initialized (`node initdb.js`)
-- [ ] Can login as admin@kgn.com / admin123
+- [ ] Can login as admin (temporary password from console)
+- [ ] Admin password changed in Settings
 - [ ] Frontend running on http://localhost:3000
 - [ ] Backend running on http://localhost:5000
 - [ ] Email (optional) configured
@@ -157,7 +153,7 @@ curl http://localhost:3000           # Should return HTML
 
 # 2. Test login
 # Visit http://localhost:3000/login
-# Use: admin@kgn.com / admin123
+# Use the credentials shown in console after node initdb.js
 
 # 3. Visit admin dashboard
 # Click "Admin" button after login
@@ -178,9 +174,9 @@ curl http://localhost:3000           # Should return HTML
 - ✅ Ensure database has read/write access
 
 ### "Login not working"
-- ✅ Run `node initdb.js` to create test users
-- ✅ Use: admin@kgn.com / admin123
-- ✅ Check backend server is running
+- ✅ Check console output after `node initdb.js` for credentials
+- ✅ Ensure password was set during database initialization
+- ✅ Check backend server is running on port 5000
 
 ### "API calls failing"
 - ✅ Verify backend is running on port 5000

@@ -20,17 +20,17 @@ const initializeDatabase = async () => {
     await RestaurantSettings.deleteMany({});
     await Testimonial.deleteMany({});
 
-    // Create admin user
+    // Create admin user (use secure password generation)
     console.log('Creating admin user...');
-    const hashedPassword = await bcryptjs.hash('admin123', 10);
+    const adminPassword = await bcryptjs.hash('ChangeMe@123!', 10);
     const adminUser = await User.create({
-      name: 'Admin',
-      email: 'admin@kgn.com',
-      password: hashedPassword,
-      phone: '+1 (555) 123-4567',
+      name: 'Administrator',
+      email: process.env.ADMIN_EMAIL || 'Change this email in admin settings',
+      password: adminPassword,
+      phone: '+1 (555) 000-0000',
       role: 'admin',
     });
-    console.log('✅ Admin user created: admin@kgn.com / admin123');
+    console.log('⚠️  Admin user created. Please change the password and email immediately after login.');
 
     // Create test customer
     console.log('Creating test customer...');
@@ -204,13 +204,11 @@ const initializeDatabase = async () => {
     console.log('✅ Testimonials created (5 items)');
 
     console.log('\n✅ Database initialization complete!');
-    console.log('\n📝 Test Credentials:');
-    console.log('Admin:');
-    console.log('  Email: admin@kgn.com');
-    console.log('  Password: admin123');
-    console.log('\nCustomer:');
-    console.log('  Email: customer@example.com');
-    console.log('  Password: customer123');
+    console.log('\n⚠️  IMPORTANT SECURITY NOTICE:');
+    console.log('A temporary admin account has been created.');
+    console.log('You MUST change the admin email and password immediately after first login.');
+    console.log('Navigate to Admin → Settings to update credentials.');
+    console.log('\nNo credentials are displayed for security reasons.');
 
     process.exit(0);
   } catch (error) {

@@ -1,5 +1,6 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
+const { handleError, logSecurityEvent } = require('../utils/errorHandler');
 
 const generateToken = (id, role) => {
   return jwt.sign({ id, role }, process.env.JWT_SECRET, {
@@ -42,7 +43,8 @@ exports.register = async (req, res) => {
       },
     });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    const { message, status } = handleError(error, 'user registration');
+    res.status(status).json({ message });
   }
 };
 
@@ -85,7 +87,8 @@ exports.login = async (req, res) => {
       },
     });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    const { message, status } = handleError(error, 'user login');
+    res.status(status).json({ message });
   }
 };
 
@@ -144,7 +147,8 @@ exports.getAllUsers = async (req, res) => {
       data: users,
     });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    const { message, status } = handleError(error, 'fetching users');
+    res.status(status).json({ message });
   }
 };
 
@@ -164,6 +168,7 @@ exports.deleteUser = async (req, res) => {
       message: 'User deleted',
     });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    const { message, status } = handleError(error, 'deleting user');
+    res.status(status).json({ message });
   }
 };

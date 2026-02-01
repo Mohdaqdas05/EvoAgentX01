@@ -130,3 +130,57 @@ Node.js v24.11.1
 Server running on port 5000
 Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
 [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server running on port 5000
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server running on port 5000
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:20067) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+Server running on port 5000
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server running on port 5000
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server running on port 5000
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server running on port 5000
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server running on port 5000
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server running on port 5000
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server running on port 5000
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server running on port 5000
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
